@@ -1,0 +1,7 @@
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "nord"
+
+configuration {
+    font: "JetBrains Mono 11";
+}
