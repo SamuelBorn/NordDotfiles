@@ -234,3 +234,4 @@ bindsym $mod+b exec brave
 bindsym $mod+q kill
 
 bindsym $mod+p exec flameshot gui
+bindsym Print exec flameshot gui
