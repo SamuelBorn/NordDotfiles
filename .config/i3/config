@@ -211,6 +211,8 @@ bar {
 
 exec setxkbmap de
 
+exec dropbox
+
 exec picom &
 
 exec autotiling
