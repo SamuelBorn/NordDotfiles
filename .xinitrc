@@ -52,5 +52,6 @@ fi
 eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
 
+nvidia-settings --assign CurrentMetaMode="DPY-0: nvidia-auto-select @1920x1080 +1920+0 {ForceCompositionPipeline=On}, DPY-2: nvidia-auto-select @1920x1080 +0+0 {ForceCompositionPipeline=On}" &
 /home/sam/.screenlayout/main.sh &
 exec i3
