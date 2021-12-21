@@ -37,8 +37,8 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && pkill -RTMIN+1 i3blocks 
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle &&  pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 exec "pkill -RTMIN+1 i3blocks"
@@ -225,11 +225,13 @@ exec setxkbmap de
 
 exec dropbox
 
-#exec picom &
+# exec picom &
 
 exec_always autotiling &
 
-exec xrandr --Virtual1 --mode=1920x1080
+# exec xrandr --Virtual1 --mode=1920x1080
+
+exec parcellite
 
 exec_always feh --bg-fill /home/sam/Pictures/wave-dark-nord-blur.png
 
@@ -243,4 +245,10 @@ bindsym $mod+b exec brave
 
 bindsym $mod+q kill
 
+bindsym $mod+g exec gitkraken
+
 bindsym Print exec flameshot gui
+
+bindsym $mod+Shift+minus move scratchpad
+
+bindsym $mod+minus scratchpad show
