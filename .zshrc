@@ -1,4 +1,4 @@
-
+export PATH=$PATH:/home/sam/Documents/openjml
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -101,6 +101,7 @@ plugins=(git)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias updatemirrors="sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country Germany --protocol https"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias vpn="sudo openvpn --config /home/sam/Documents/vpn/kit.ovpn"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
