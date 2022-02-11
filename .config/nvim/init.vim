@@ -1,3 +1,4 @@
+set number relativenumber
 set ignorecase
 syntax on
 set scrolloff=10
