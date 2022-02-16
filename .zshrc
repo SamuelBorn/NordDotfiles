@@ -102,6 +102,7 @@ plugins=(git zsh-syntax-highlighting)
 alias updatemirrors="sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country Germany --protocol https"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vpn="sudo openvpn --config /home/sam/Documents/vpn/kit.ovpn"
+alias sd="shutdown -h now"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
